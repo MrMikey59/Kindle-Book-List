@@ -36,3 +36,4 @@ acquiredDate    Purchase Date
 sales_rank          Sales ranking of the book (Date Specific)
 rating              Rating of the Book (Date Specific)
 number_of_ratings   Number of Ratings for the Book (Date Specific)
+
