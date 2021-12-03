@@ -43,7 +43,7 @@ itemStatus { Active | Expired }
 
 excludeExpiredItemsFor { KOLL | Purchase | Pottermore | FreeTrial | DeviceRegistration | ku | Sample }
 
-originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample
+originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample | 
 isExtendedMYK { True | False }
 
 csrfToken encodeURIComponent(csrf)
@@ -75,6 +75,7 @@ number_of_ratings Number of Ratings for the Book (Date Specific)
 
 # Alternate Sources of Book List
 KindleSyncMetadataCache.xml (a Kindle for PC database)
+Kindle Cloud Reader HTML file.
 
 # KindleSyncMetadataCache.xml File Sample Format:
 <add_update_list>
@@ -87,7 +88,7 @@ KindleSyncMetadataCache.xml (a Kindle for PC database)
 
     <authors>
 
-      </author></author>
+      <author></author>
 
     </authors>
 
@@ -110,4 +111,35 @@ KindleSyncMetadataCache.xml (a Kindle for PC database)
 </add_update_list>
 
 Note: This file has different information available as compared to the Kindle Cloud Library. a conversion from XML to CSV would be necessary.
+
+# Kindle Cloud Reader HTML file format example.
+
+<div id="titles_inner_wrapper" style="font-size: 191.25px;">
+
+  <div id="B00DJI3HWS" class="book_container">
+
+    <div class="book_cover">
+
+      <img class="book_image book_click_area" src="https://images-na.ssl-images-amazon.com/images/P/B00DJI3HWS.01._SX255_SY255_TTXW_SCLZZZZZZZ_.jpg" title="I Bastardi di Pizzofalcone (Italian Edition)">
+
+      <div class="alt_title book_click_area"></div>
+
+    </div>
+
+    <div class="book_details">
+
+      <div class="book_title book_click_area">I Bastardi di Pizzofalcone (Italian Edition)</div>
+
+      <div class="book_author book_click_area">Maurizio de Giovanni</div>
+
+    </div>
+
+  </div>
+
+  ...  and many more   ...
+
+</div>
+
+Note: Wait for all of your books to be loaded into the browser window, then view it's source and copy the section that start twith ID of titles_inner_wrapper.
+
 
