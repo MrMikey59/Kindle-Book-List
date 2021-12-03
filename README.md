@@ -136,8 +136,6 @@ Note: This file has different information available as compared to the Kindle Cl
 
   </div>
 
-  ...  and many more   ...
-
 </div>
 
 Note: Wait for all of your books to be loaded into the browser window, then view it's source and copy the section that start twith ID of titles_inner_wrapper.
