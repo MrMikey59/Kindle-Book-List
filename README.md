@@ -15,17 +15,17 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 
 # Acronyms
 
-ASIN Amazon Store Identification Number
+ASIN    Amazon Store Identification Number
 
-CSV Comma Separated Values (a Database)
+CSV     Comma Separated Values (a Database)
 
-JSON  JavaScript Object Notation (a Database)
+JSON    JavaScript Object Notation (a Database)
 
-K4PC Kindle for Personal Computers
+K4PC    Kindle for Personal Computers
 
-K4W Kindle for Windows
+K4W     Kindle for Windows
 
-XML eXtensible Markup Language (a Database)
+XML     eXtensible Markup Language (a Database)
 
 # Build the Query
 
@@ -47,6 +47,9 @@ originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLendi
 isExtendedMYK { True | False }
 
 csrfToken encodeURIComponent(csrf)
+
+Select one item within {} for your query. Not all elements are required in the query.
+
 
 # Data Elements (Fields)
 
