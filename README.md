@@ -120,6 +120,14 @@ Second Modify these two line to reflect your data form the data elements to be c
 Make sure you put the '\n' at the end or all items will be on one row following the header created in the first line.  
 Go to your Kindle Cloud Reader in Chrome, or FireFox. Open the Developer Console. Paste the code block in ad then select RUN.  A dialog box will open when the download completes so you can save or open the new CSV file. Go check out your saved CSV file in the Downloads folder of the current user!  
 
+Here's a screenshot of the console as it's running:
+
+[![Script Running](https://github.com/MrMikey59/Kindle-Book-List/blob/main/ScriptRunning.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/ScriptRunning.png) 
+
+Here's a screenshot of the Save File dialog box:
+
+[![Save the File](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SaveFileDialog.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SaveFileDialog.png) 
+
 Screenshot in Windows File Explorer showing the Saved file (Your name will vary!):
 
 [![Saved File](https://github.com/MrMikey59/Kindle-Book-List/blob/main/FileExplorerScreenShot.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/FileExplorerScreenShot.png) 
@@ -131,3 +139,11 @@ Screenshot of FireFox's Console where I collected the Raw Object data (Pink):
 [![Raw Object Data Collection](https://github.com/MrMikey59/Kindle-Book-List/blob/main/FFBrowserConsole.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/FFBrowserConsole.png) 
 
 > **Note**: You can use multiple sort options to get a broader listing and then combine the files and remove duplicates.
+
+### Second Running of Script?
+
+Script cannot be run consecutively.  Refresh your browser page and then rerun. If you do, here’s the clue:
+
+[![Script Run Error](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png) 
+
+> **Note**: You will not lose the console or the script when you refresh.
