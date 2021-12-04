@@ -5,21 +5,16 @@ This is a project to collect information from Amazon related to purchased books 
 Access the Library: https://read.amazon.com/kindle-library
 
 Note:
-
-- Kindle Cloud Reader offers very basic features: highlights, notes, or search within a book.
-
-- You can read your books in the browser, creating notes & highlights, just like using your Kindle Device.
-
+- Kindle Cloud Reader offers very basic features: highlights, notes, or search within a book.  
+- You can read your books in the browser, creating notes & highlights, just like using your Kindle Device.  
 - You can copy your notes & highlights within the web browser for all synced books.
-Data in the Kindle Cloud Library is stored in a JSON format.
+Data in the Kindle Cloud Library is stored in a JSON format.  
 
 # Related GISTS
-https://gist.github.com/jkubecki
-
-https://gist.github.com/usayamadx 
+- https://gist.github.com/jkubecki  
+- https://gist.github.com/usayamadx  
 
 # Acronyms
-
 | Acronym | Description |  
 | ----------- | ----------- |
 | ASIN    | Amazon Store Identification Number; Amazon Standard Identification Number |  
@@ -113,7 +108,6 @@ This isn't the best choice as clean up of the HTML will take so much more time, 
 
 
 # Using ExportKindle.js
-
 First, modify the query to support your book list requirements based on the query options available above. 
 
     let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'
@@ -123,6 +117,7 @@ Second Modify these two line to reflect your data form the data elements to be c
     let csvData = "ASIN,Title,Author(s)\n"
     csvData += item.asin + '","' + item.title + '","' + item.authors + '\n'
 
-Make sure you put the '\n' at the end or all items will be on one row following the header created in the first line.
+Make sure you put the '\n' at the end or all items will be on one row following the header created in the first line.  
+Go to your Kindle Cloud Reader in Chrome, or FireFox. Open the Developer Console. Paste the code block in ad then select RUN.  A dialog box will open when the download completes so you can save or open the new CSV file. Go check out your saved CSV file in the Downloads folder of the current user!  
 
-Go to your Kindle Cloud Reader in CHrome, or FireFox. Open the Developer Console. Paste the code block in ad then select RUN.  Then go check out your new CSV file!
+I've included a test run file that I created for my 17000+ book Library.  Note, only the first 10000 books were gathered. This appears to be a limitation of the AMAZON data exchange, not the script.
