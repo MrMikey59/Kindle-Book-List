@@ -20,7 +20,7 @@ https://gist.github.com/usayamadx
 
 # Acronyms
 
-ASIN    Amazon Store Identification Number
+ASIN    Amazon Store Identification Number; Amazon Standard Identification Number
 
 csrs    ???
 
@@ -159,4 +159,17 @@ Note: This file has different information available as compared to the Kindle Cl
 
 This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
 
+
+# Using ExportKindle.js
+
+First, modify the query to support your book list requirements based on the query options available above. 
+
+    let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'
+
+Second Modify these two line to reflect your data form the data elements to be collected in the CSV creation (This example has ASIN, Title, & Authors):
+
+    let csvData = "ASIN,Title,Author(s)\n"
+    csvData += item.asin + '","' + item.title + '","' + item.authors + '\n'
+
+Make sure you put the '\n' at the end or all items will be on one row following the header in the first line.
 
