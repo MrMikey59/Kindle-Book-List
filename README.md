@@ -21,23 +21,14 @@ https://gist.github.com/usayamadx
 # Acronyms
 
 | Acronym | Description |  
-
 | ----------- | ----------- |
-
 | ASIN    | Amazon Store Identification Number; Amazon Standard Identification Number |  
-
 | csrs    | ??? |  
-
 | CSV     | Comma Separated Values (a Database) |  
-
 | HTML    | HyperText Markup Language |  
-
 | JSON    | JavaScript Object Notation (a Database) |  
-
 | K4PC    | Kindle for Personal Computers |  
-
 | K4W     | Kindle for Windows |  
-
 | XML     | eXtensible Markup Language (a Database) |   
 
 # Build the Query
