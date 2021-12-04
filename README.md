@@ -166,3 +166,4 @@ Second Modify these two line to reflect your data form the data elements to be c
 
 Make sure you put the '\n' at the end or all items will be on one row following the header created in the first line.
 
+Go to your Kindle Cloud Reader in CHrome, or FireFox. Open the Developer Console. Paste the code block in ad then select RUN.  Then go check out your new CSV file!
