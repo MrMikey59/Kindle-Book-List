@@ -11,8 +11,9 @@ Note:
 Data in the Kindle Cloud Library is stored in a JSON format.  
 
 #### References
-* [Markdown Cheat Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)  
 * [Amazon Product Advertising API (AWS Account)](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html)
+* [GoodReads API](https://www.goodreads.com/api)
+* [Markdown Cheat Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)  
 
 #### Related GISTS
 - https://gist.github.com/jkubecki  
@@ -48,7 +49,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 > **Note**: Select one item within {} for your query. Not all elements are required in the query. I haven't tested all possible queries, but the first 5 in the list do work well.  
 
 ## Data Elements (Fields)
-| Element | Description | Tested | 
+| Element | Description | Tested - Problems | 
 | ----------- | ----------- | ----------- |  
 | authors[0] | List of Authors | Yes - colons & commas |  
 | title | The Title of the Book | Yes - Series & commas |  
@@ -71,8 +72,8 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 
 ## Alternate Sources of Book List
 * KindleSyncMetadataCache.xml (a Kindle for PC database)
-* Kindle Cloud Reader HTML file.
-* GoodReads Shelfari or My Books HTML file.
+* [Kindle Cloud Reader](https://read.amazon.com/kindle-library) HTML file.
+* [GoodReads](https://www.goodreads.com/) or [GoodReads Mobile](https://www.goodreads.com/toggle_mobile) Shelfari or My Books HTML file.
 
 ## KindleSyncMetadataCache.xml File Sample Format:
 ```xml
