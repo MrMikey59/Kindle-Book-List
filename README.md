@@ -20,21 +20,25 @@ https://gist.github.com/usayamadx
 
 # Acronyms
 
-ASIN    Amazon Store Identification Number; Amazon Standard Identification Number
+| Acronym | Description |  
 
-csrs    ???
+| ----------- | ----------- |
 
-CSV     Comma Separated Values (a Database)
+| ASIN    | Amazon Store Identification Number; Amazon Standard Identification Number |  
 
-HTML    HyperText Markup Language
+| csrs    | ??? |  
 
-JSON    JavaScript Object Notation (a Database)
+| CSV     | Comma Separated Values (a Database) |  
 
-K4PC    Kindle for Personal Computers
+| HTML    | HyperText Markup Language |  
 
-K4W     Kindle for Windows
+| JSON    | JavaScript Object Notation (a Database) |  
 
-XML     eXtensible Markup Language (a Database)
+| K4PC    | Kindle for Personal Computers |  
+
+| K4W     | Kindle for Windows |  
+
+| XML     | eXtensible Markup Language (a Database) |   
 
 # Build the Query
 
