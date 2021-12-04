@@ -124,10 +124,6 @@ Note: This file has different information available as compared to the Kindle Cl
 
 # Kindle Cloud Reader HTML file format example.
 
-<DIV>
-
-  <DIV>
-
     <DIV id="titles_inner_wrapper" style="font-size: 191.25px;">
 
       <DIV id="B00DJI3HWS" class="book_container">
@@ -152,9 +148,6 @@ Note: This file has different information available as compared to the Kindle Cl
 
     </DIV>  
 
-  </DIV>
-
-</DIV>
 <B>Note:</B> Wait for all of your books to be loaded into the browser window, then view it's source and copy the DIV section that start with ID of titles_inner_wrapper. 
 
 This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
@@ -171,5 +164,5 @@ Second Modify these two line to reflect your data form the data elements to be c
     let csvData = "ASIN,Title,Author(s)\n"
     csvData += item.asin + '","' + item.title + '","' + item.authors + '\n'
 
-Make sure you put the '\n' at the end or all items will be on one row following the header in the first line.
+Make sure you put the '\n' at the end or all items will be on one row following the header created in the first line.
 
