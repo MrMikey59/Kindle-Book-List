@@ -47,19 +47,19 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 > **Note**: Select one item within {} for your query. Not all elements are required in the query. I haven't tested all possible queries, but the first 5 in the list do work well.  
 
 # Data Elements (Fields)
-| Element | Description |  
-| ----------- | ----------- |  
-| authors[0] | List of Authors | 
-| title | The Title of the Book | 
-| asin | Amazon's Unique ID Number for the Book | 
+| Element | Description | Tested | 
+| ----------- | ----------- | ----------- |  
+| authors[0] | List of Authors | Yes |  
+| title | The Title of the Book | Yes |  
+| asin | Amazon's Unique ID Number for the Book | Yes |  
 | webReaderUrl |  bookmark to the web Reader | 
-| productUrl | a link to cover images | 
-| percentageRead | a guestimate of how much you've read of the book.  | 
-| resourceType | (EBOOK or EBOOK_SAMPLE) | 
-| originType | (PRIME and PURCHASE) | 
-| orderDetailURL | URL To your Purchase Order for the Book | 
-| productImage | URL to the Book cover | 
-| acquiredDate | Purchase Date | 
+| productUrl | a link to cover images |  Yes | 
+| percentageRead | a guestimate of how much you've read of the book.  | No |  
+| resourceType | (EBOOK or EBOOK_SAMPLE) | No |   
+| originType | (PRIME and PURCHASE) | No |   
+| orderDetailURL | URL To your Purchase Order for the Book | No |   
+| productImage | URL to the Book cover | No |   
+| acquiredDate | Purchase Date | No |   
 
 # Additional Possible Fields from the product page:
 | Element | Description |  
