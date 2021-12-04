@@ -138,6 +138,6 @@ Note: This file has different information available as compared to the Kindle Cl
 
 </div>
 
-Note: Wait for all of your books to be loaded into the browser window, then view it's source and copy the section that start twith ID of titles_inner_wrapper.
+Note: Wait for all of your books to be loaded into the browser window, then view it's source and copy the DIV section that start with ID of titles_inner_wrapper. This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
 
 
