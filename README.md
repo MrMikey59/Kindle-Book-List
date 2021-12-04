@@ -29,6 +29,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | JSON    | JavaScript Object Notation (a Database) |  
 | K4PC    | Kindle for Personal Computers |  
 | K4W     | Kindle for Windows |  
+| TSV     | Tab Separated Values |  
 | XHR     | XML HTTP Request |  
 | XML     | eXtensible Markup Language (a Database) |   
 
@@ -116,9 +117,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 > **Note:** Wait for all of your books to be loaded into the browser window, then view it's source and copy the DIV section that start with ID of titles_inner_wrapper.   
 This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
 
-## Using ExportKindleCSV.js for CSV File
-### OR
-## Using ExportKindleTSV.js for TSV File
+## Using ExportKindleCSV.js for CSV File or ExportKindleTSV.js for TSV File
 First, modify the query to support your book list requirements based on the query options available above. 
 
     let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'
@@ -163,5 +162,7 @@ Script cannot be run consecutively.  Refresh your browser page and then rerun. I
 [![Script Run Error](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png) 
 
 > **Note**: You will not lose the console or the script when you refresh.
+
+> **Note**: Using the TSV version solves the problem with title or authors using commas, but adds steps to convert it to a proper spreadsheet by importing it in =to Excel or Google Sheets.
 
 
