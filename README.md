@@ -116,8 +116,9 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 > **Note:** Wait for all of your books to be loaded into the browser window, then view it's source and copy the DIV section that start with ID of titles_inner_wrapper.   
 This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
 
-
-## Using ExportKindle.js
+## Using ExportKindleCSV.js for CSV File
+### OR
+## Using ExportKindleTSV.js for TSV File
 First, modify the query to support your book list requirements based on the query options available above. 
 
     let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'
