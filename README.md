@@ -1,6 +1,6 @@
 # Kindle-Book-List
 
-This is a project to collect information from Amazon related to purchased books from the Kindle Cloud Library.
+This is a project to collect information from Amazon related to purchased books from the Kindle Cloud Library. All the books added to Kindle account are stored on Amazon servers, not on the particular device. Access your Kindle Cloud Library by loggin into your Amazon account then select Manage Your Content and Devices. 
 
 Access the Library: https://read.amazon.com/kindle-library
 
@@ -17,7 +17,11 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 
 ASIN    Amazon Store Identification Number
 
+csrs    ???
+
 CSV     Comma Separated Values (a Database)
+
+HTML    HyperText Markup Language
 
 JSON    JavaScript Object Notation (a Database)
 
@@ -43,7 +47,8 @@ itemStatus { Active | Expired }
 
 excludeExpiredItemsFor { KOLL | Purchase | Pottermore | FreeTrial | DeviceRegistration | ku | Sample }
 
-originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample | 
+originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample }
+
 isExtendedMYK { True | False }
 
 csrfToken encodeURIComponent(csrf)
@@ -113,31 +118,33 @@ Kindle Cloud Reader HTML file.
 Note: This file has different information available as compared to the Kindle Cloud Library. a conversion from XML to CSV would be necessary.
 
 # Kindle Cloud Reader HTML file format example.
+"
+<DIV id="titles_inner_wrapper" style="font-size: 191.25px;">
 
-<div id="titles_inner_wrapper" style="font-size: 191.25px;">
+  <DIV id="B00DJI3HWS" class="book_container">
 
-  <div id="B00DJI3HWS" class="book_container">
+    <DIV class="book_cover">
 
-    <div class="book_cover">
+      <IMG class="book_image book_click_area" src="https://images-na.ssl-images-amazon.com/images/P/B00DJI3HWS.01._SX255_SY255_TTXW_SCLZZZZZZZ_.jpg" title="I Bastardi di Pizzofalcone (Italian Edition)">
 
-      <img class="book_image book_click_area" src="https://images-na.ssl-images-amazon.com/images/P/B00DJI3HWS.01._SX255_SY255_TTXW_SCLZZZZZZZ_.jpg" title="I Bastardi di Pizzofalcone (Italian Edition)">
+      <DIV class="alt_title book_click_area"></DIV>
 
-      <div class="alt_title book_click_area"></div>
+    </DIV>
 
-    </div>
+    <DIV class="book_details">
 
-    <div class="book_details">
+      <DIV class="book_title book_click_area">I Bastardi di Pizzofalcone (Italian Edition)</DIV>
 
-      <div class="book_title book_click_area">I Bastardi di Pizzofalcone (Italian Edition)</div>
+      <DIV class="book_author book_click_area">Maurizio de Giovanni</div>
 
-      <div class="book_author book_click_area">Maurizio de Giovanni</div>
+    </DIV>
 
-    </div>
+  </DIV>
 
-  </div>
+</DIV>
+"
+<B>Note:</B> Wait for all of your books to be loaded into the browser window, then view it's source and copy the DIV section that start with ID of titles_inner_wrapper. 
 
-</div>
-
-Note: Wait for all of your books to be loaded into the browser window, then view it's source and copy the DIV section that start with ID of titles_inner_wrapper. This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
+This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
 
 
