@@ -1,6 +1,8 @@
 # Background & Support Information
 
-# AWS Account Required for these:
+Here are other GIT projects that relate to this project. I used them to collect query & item details related to the Kindle Cloud Reader.
+
+# AWS Account Required:
 
 https://github.com/avinash/agathe (Python) - more Item details listed.
 

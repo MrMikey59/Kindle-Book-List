@@ -42,6 +42,6 @@ getItemsList()
 
 // to csv
 items.forEach(item => {
-  csvData += '"' + item.asin + '","' + item.title + '","' + item.authors + '"\n'
+  csvData += item.asin + '","' + item.title + '","' + item.authors + '\n'
 })
 window.location = 'data:text/csv;charset=utf8,' + encodeURIComponent(csvData)
