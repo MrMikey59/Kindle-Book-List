@@ -142,7 +142,7 @@ Screenshot of FireFox's Console where I collected the Raw Object data (Pink):
 
 ### Second Running of Script?
 
-Script cannot be run consecutively.  Refresh your browser page and then rerun. If you do, here’s the clue:
+Script cannot be run consecutively.  Refresh your browser page and then rerun. If you do run it again without the refresh, here’s the clue:
 
 [![Script Run Error](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png) 
 
