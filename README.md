@@ -32,28 +32,20 @@ https://gist.github.com/usayamadx
 | XML     | eXtensible Markup Language (a Database) |   
 
 # Build the Query
+| Query Type | Options Available |  
+| ----------- | ----------- |
+| sortOrder { DESCENDING | ASCENDING } |  
+| sortIndex { DATE | TITLE | AUTHOR } |  
+| startIndex <StartIndex> ( 0, then multiples of batchSize) |  
+| batchSize <bsize> ( Max 50 ) |  
+| contentType Ebook |  
+| itemStatus { Active | Expired } |  
+| excludeExpiredItemsFor { KOLL | Purchase | Pottermore | FreeTrial | DeviceRegistration | ku | Sample } |  
+| originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample | Prime } |  
+| isExtendedMYK { True | False } |  
+| csrfToken encodeURIComponent(csrf) |  
 
-sortOrder { DESCENDING | ASCENDING }
-
-sortIndex { DATE | TITLE | AUTHOR }
-
-startIndex <StartIndex> ( 0, then multiples of batchSize)
-
-batchSize <bsize> ( Max 50 )
-
-contentType Ebook
-
-itemStatus { Active | Expired }
-
-excludeExpiredItemsFor { KOLL | Purchase | Pottermore | FreeTrial | DeviceRegistration | ku | Sample }
-
-originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample | Prime }
-
-isExtendedMYK { True | False }
-
-csrfToken encodeURIComponent(csrf)
-
-Select one item within {} for your query. Not all elements are required in the query.
+> Select one item within {} for your query. Not all elements are required in the query. 
 
 # Data Elements (Fields)
 
