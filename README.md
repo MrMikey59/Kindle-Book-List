@@ -27,6 +27,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | JSON    | JavaScript Object Notation (a Database) |  
 | K4PC    | Kindle for Personal Computers |  
 | K4W     | Kindle for Windows |  
+| XHR     | XML HTTP Request |  
 | XML     | eXtensible Markup Language (a Database) |   
 
 # Build the Query
@@ -124,7 +125,10 @@ Second Modify these two line to reflect your data form the data elements to be c
     csvData += item.asin + '","' + item.title + '","' + item.authors + '\n'
 
 Make sure you put the '\n' at the end or all items will be on one row following the header created in the first line.  
+
 Go to your Kindle Cloud Reader in Chrome, or FireFox. Open the Developer Console. Paste the code block in ad then select RUN.  A dialog box will open when the download completes so you can save or open the new CSV file. Go check out your saved CSV file in the Downloads folder of the current user!  
+
+> **Note**: Run this script in FireFox’s Multiline mode. 
 
 Here's a screenshot of the console as it's running:
 
