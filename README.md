@@ -17,7 +17,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 - https://gist.github.com/jkubecki  
 - https://gist.github.com/usayamadx  
 
-# Acronyms
+## Acronyms
 | Acronym | Description |  
 | ----------- | ----------- |
 | ASIN    | Amazon Store Identification Number; Amazon Standard Identification Number |  
@@ -30,7 +30,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | XHR     | XML HTTP Request |  
 | XML     | eXtensible Markup Language (a Database) |   
 
-# Build the Query
+## Build the Query
 | Query Type | Options Available |  
 | ----------- | ----------- |
 | sortOrder | { DESCENDING &#124; ASCENDING } |  
@@ -46,33 +46,33 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 
 > **Note**: Select one item within {} for your query. Not all elements are required in the query. I haven't tested all possible queries, but the first 5 in the list do work well.  
 
-# Data Elements (Fields)
+## Data Elements (Fields)
 | Element | Description | Tested | 
 | ----------- | ----------- | ----------- |  
-| authors[0] | List of Authors | Yes |  
-| title | The Title of the Book | Yes |  
+| authors[0] | List of Authors | Yes - colons & commas |  
+| title | The Title of the Book | Yes - Series & commas |  
 | asin | Amazon's Unique ID Number for the Book | Yes |  
 | webReaderUrl |  bookmark to the web Reader | 
 | productUrl | a link to cover images |  Yes | 
-| percentageRead | a guestimate of how much you've read of the book.  | No |  
+| percentageRead | a guestimate of how much you've read of the book.  | Yes |  
 | resourceType | (EBOOK or EBOOK_SAMPLE) | No |   
 | originType | (PRIME and PURCHASE) | No |   
 | orderDetailURL | URL To your Purchase Order for the Book | No |   
-| productImage | URL to the Book cover | No |   
-| acquiredDate | Purchase Date | No |   
+| productImage | URL to the Book cover | Yes - Undefined |   
+| acquiredDate | Purchase Date | Yes - Undefined |   
 
-# Additional Possible Fields from the product page:
+## Additional Possible Fields from the product page:
 | Element | Description |  
 | ----------- | ----------- |  
 | sales_rank Sales | ranking of the book (Date Specific) |  
 | rating | Rating of the Book (Date Specific) |  
 | number_of_ratings | Number of Ratings for the Book (Date Specific) |  
 
-# Alternate Sources of Book List
+## Alternate Sources of Book List
 * KindleSyncMetadataCache.xml (a Kindle for PC database)
 * Kindle Cloud Reader HTML file.
 
-# KindleSyncMetadataCache.xml File Sample Format:
+## KindleSyncMetadataCache.xml File Sample Format:
 ```xml
     <add_update_list>  
       <meta_data>  
@@ -94,7 +94,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 
 > **Note**: This file has different information available as compared to the Kindle Cloud Library. a conversion from XML to CSV would be necessary.
 
-# Kindle Cloud Reader HTML file format example.
+## Kindle Cloud Reader HTML file format example.
 ```html
     <DIV id="titles_inner_wrapper" style="font-size: 191.25px;">  
       <DIV id="B00DJI3HWS" class="book_container">  
@@ -114,7 +114,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
 
 
-# Using ExportKindle.js
+## Using ExportKindle.js
 First, modify the query to support your book list requirements based on the query options available above. 
 
     let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'
