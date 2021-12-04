@@ -173,8 +173,8 @@ Using Windows Settings, I tried to change the Default App to Excel, but it's not
 
 And the Windows Store doesn't recognize the file type!  So I went to the trouble to "Open With" then selecting more apps till I seek out the Excel.exe file.  I selected that and the change was made to my "Open With" selections.  And now I see these: 
 
-[![From File Explorer Context Menu](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith1.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith1.png)
+[![From File Explorer Context Menu](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith1.png "From File Explorer Context Menu")](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith1.png)
 
-[![From Choose Another App](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith2.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith2.png)
+[![From Choose Another App](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith2.png "From Choose Another App")](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith2.png)
 
 
