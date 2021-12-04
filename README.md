@@ -10,7 +10,10 @@ Note:
 - You can copy your notes & highlights within the web browser for all synced books.
 Data in the Kindle Cloud Library is stored in a JSON format.  
 
-# Related GISTS
+#### References
+* https://github.com/lifeparticle/Markdown-Cheatsheet  
+
+##### Related GISTS
 - https://gist.github.com/jkubecki  
 - https://gist.github.com/usayamadx  
 
@@ -18,7 +21,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | Acronym | Description |  
 | ----------- | ----------- |
 | ASIN    | Amazon Store Identification Number; Amazon Standard Identification Number |  
-| csrs    | ??? |  
+| csrs    | ??? - If you know - let me know! |  
 | CSV     | Comma Separated Values (a Database) |  
 | HTML    | HyperText Markup Language |  
 | JSON    | JavaScript Object Notation (a Database) |  
@@ -40,7 +43,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | isExtendedMYK | { True &#124; False } |  
 | csrfToken | encodeURIComponent(csrf) |  
 
-> Select one item within {} for your query. Not all elements are required in the query. I haven't tested all possible queries, but the first 5 in the list do work well.  
+> **Note**: Select one item within {} for your query. Not all elements are required in the query. I haven't tested all possible queries, but the first 5 in the list do work well.  
 
 # Data Elements (Fields)
 | Element | Description |  
@@ -69,6 +72,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 * Kindle Cloud Reader HTML file.
 
 # KindleSyncMetadataCache.xml File Sample Format:
+```xml
     <add_update_list>  
       <meta_data>  
         <ASIN></ASIN>  
@@ -85,11 +89,12 @@ Data in the Kindle Cloud Library is stored in a JSON format.
         <publication_date></publication_date>  
       </meta_data>  
     </add_update_list>
+```
 
 > **Note**: This file has different information available as compared to the Kindle Cloud Library. a conversion from XML to CSV would be necessary.
 
 # Kindle Cloud Reader HTML file format example.
-
+```html
     <DIV id="titles_inner_wrapper" style="font-size: 191.25px;">  
       <DIV id="B00DJI3HWS" class="book_container">  
         <DIV class="book_cover">  
@@ -102,6 +107,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
         </DIV>  
       </DIV>  
     </DIV>    
+```
 
 > **Note:** Wait for all of your books to be loaded into the browser window, then view it's source and copy the DIV section that start with ID of titles_inner_wrapper.   
 This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
@@ -144,6 +150,8 @@ Screenshot of FireFox's Console where I collected the Raw Object data (Pink):
 
 Script cannot be run consecutively.  Refresh your browser page and then rerun. If you do run it again without the refresh, here’s the clue:
 
+<P align=”center”>
 [![Script Run Error](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png) 
+</P>
 
 > **Note**: You will not lose the console or the script when you refresh.
