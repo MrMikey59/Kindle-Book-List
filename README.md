@@ -88,37 +88,37 @@ KindleSyncMetadataCache.xml (a Kindle for PC database)
 Kindle Cloud Reader HTML file.
 
 # KindleSyncMetadataCache.xml File Sample Format:
-<add_update_list>
+    <add_update_list>
 
-  <meta_data>
+      <meta_data>
 
-    <ASIN></ASIN>
+        <ASIN></ASIN>
 
-    <title></title>
+        <title></title>
 
-    <authors>
+        <authors>
 
-      <author></author>
+          <author></author>
 
-    </authors>
+        </authors>
 
-    <publishers>
+        <publishers>
 
-      <publisher></publisher>
+          <publisher></publisher>
 
-    </publishers>
+        </publishers>
 
-    <is_multimedia_enabled></is_multimedia_enabled>
+        <is_multimedia_enabled></is_multimedia_enabled>
 
-    <cde_contenttype></cde_contenttype>
+        <cde_contenttype></cde_contenttype>
 
-    <content_type></content_type>
+        <content_type></content_type>
 
-    <publication_date></publication_date>
+        <publication_date></publication_date>
 
-  </meta_data>
+      </meta_data>
 
-</add_update_list>
+    </add_update_list>
 
 Note: This file has different information available as compared to the Kindle Cloud Library. a conversion from XML to CSV would be necessary.
 
