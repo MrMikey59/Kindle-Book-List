@@ -34,15 +34,15 @@ https://gist.github.com/usayamadx
 # Build the Query
 | Query Type | Options Available |  
 | ----------- | ----------- |
-| sortOrder | { DESCENDING | ASCENDING } |  
-| sortIndex | { DATE | TITLE | AUTHOR } |  
+| sortOrder | { DESCENDING &#124; ASCENDING } |  
+| sortIndex | { DATE &#124; TITLE &#124; AUTHOR } |  
 | startIndex | <StartIndex> ( 0, then multiples of batchSize) |  
 | batchSize | <bsize> ( Max 50 ) |  
 | contentType | Ebook |  
-| itemStatus | { Active | Expired } |  
-| excludeExpiredItemsFor | { KOLL | Purchase | Pottermore | FreeTrial | DeviceRegistration | ku | Sample } |  
-| originType | { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample | Prime } |  
-| isExtendedMYK | { True | False } |  
+| itemStatus | { Active &#124; Expired } |  
+| excludeExpiredItemsFor | { KOLL &#124; Purchase &#124; Pottermore &#124; FreeTrial &#124; DeviceRegistration &#124; ku &#124; Sample } |  
+| originType | { Purchase &#124; PublicLibraryLending &#124; PersonalLending &#124; KOLL &#124; RFFLending &#124; Pottermore &#124; Rental &#124; DeviceRegistration &#124; FreeTrial &#124; ku &#124; Sample &#124; Prime } |  
+| isExtendedMYK | { True &#124; False } |  
 | csrfToken | encodeURIComponent(csrf) |  
 
 > Select one item within {} for your query. Not all elements are required in the query. 
