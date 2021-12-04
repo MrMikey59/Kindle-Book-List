@@ -165,4 +165,10 @@ Script cannot be run consecutively.  Refresh your browser page and then rerun. I
 
 > **Note**: Using the TSV version solves the problem with title or authors using commas, but adds steps to convert it to a proper spreadsheet by importing it in =to Excel or Google Sheets.
 
+### Change App Default for TSV File
 
+Using Windows Settings, I tried to change the Default App to Excel, but it's not possible:
+
+[![Change TSV Default App](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVFileDefaultApp.png)]:(https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVFileDefaultApp.png)
+
+And the Windows Store doesn't recognize the file type!  
