@@ -140,7 +140,7 @@ Screenshot in Windows File Explorer showing the Saved file (Your name will vary!
 
 I've included a test run file that I created for my 17000+ book Library.  Note, only the first 10000 books were gathered. This appears to be a limitation of the AMAZON data exchange, not the script.  I've included a Raw Object file that I copied from the console for those that like to look under the hood!
 
-Screenshot of FireFox's Console where I collected the [Raw Object data]: <https://github.com/MrMikey59/Kindle-Book-List/blob/main/RawObject.txt> (Pink):
+Screenshot of FireFox's Console where I collected the [Raw Object data]: (https://github.com/MrMikey59/Kindle-Book-List/blob/main/RawObject.txt)  (Pink):
 
 [![Raw Object Data Collection](https://github.com/MrMikey59/Kindle-Book-List/blob/main/FFBrowserConsole.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/FFBrowserConsole.png) 
 
@@ -153,3 +153,5 @@ Script cannot be run consecutively.  Refresh your browser page and then rerun. I
 [![Script Run Error](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png) 
 
 > **Note**: You will not lose the console or the script when you refresh.
+
+
