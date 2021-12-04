@@ -13,7 +13,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 #### References
 * https://github.com/lifeparticle/Markdown-Cheatsheet  
 
-##### Related GISTS
+#### Related GISTS
 - https://gist.github.com/jkubecki  
 - https://gist.github.com/usayamadx  
 
@@ -150,8 +150,6 @@ Screenshot of FireFox's Console where I collected the Raw Object data (Pink):
 
 Script cannot be run consecutively.  Refresh your browser page and then rerun. If you do run it again without the refresh, here’s the clue:
 
-<P align=”center”>
 [![Script Run Error](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/SecondRunError.png) 
-</P>
 
 > **Note**: You will not lose the console or the script when you refresh.
