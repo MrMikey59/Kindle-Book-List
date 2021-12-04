@@ -13,6 +13,11 @@ Note:
 - You can copy your notes & highlights within the web browser for all synced books.
 Data in the Kindle Cloud Library is stored in a JSON format.
 
+# Related GISTS
+https://gist.github.com/jkubecki
+
+https://gist.github.com/usayamadx 
+
 # Acronyms
 
 ASIN    Amazon Store Identification Number
