@@ -11,7 +11,8 @@ Note:
 Data in the Kindle Cloud Library is stored in a JSON format.  
 
 #### References
-* https://github.com/lifeparticle/Markdown-Cheatsheet  
+* [Markdown Cheat Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)  
+* [Amazon Product Advertising API (AWS Account)](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html)
 
 #### Related GISTS
 - https://gist.github.com/jkubecki  
@@ -20,7 +21,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 ## Acronyms
 | Acronym | Description |  
 | ----------- | ----------- |
-| ASIN    | Amazon Store Identification Number; Amazon Standard Identification Number |  
+| ASIN    | Amazon Store Identification Number;<br> Amazon Standard Identification Number |  
 | csrs    | ??? - If you know - let me know! |  
 | CSV     | Comma Separated Values (a Database) |  
 | HTML    | HyperText Markup Language |  
@@ -52,7 +53,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | authors[0] | List of Authors | Yes - colons & commas |  
 | title | The Title of the Book | Yes - Series & commas |  
 | asin | Amazon's Unique ID Number for the Book | Yes |  
-| webReaderUrl |  bookmark to the web Reader | 
+| webReaderUrl |  bookmark to the web Reader | No |  
 | productUrl | a link to cover images |  Yes | 
 | percentageRead | a guestimate of how much you've read of the book.  | Yes |  
 | resourceType | (EBOOK or EBOOK_SAMPLE) | No |   
@@ -71,6 +72,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 ## Alternate Sources of Book List
 * KindleSyncMetadataCache.xml (a Kindle for PC database)
 * Kindle Cloud Reader HTML file.
+* GoodReads Shelfari or My Books HTML file.
 
 ## KindleSyncMetadataCache.xml File Sample Format:
 ```xml
@@ -126,7 +128,9 @@ Second Modify these two line to reflect your data form the data elements to be c
 
 Make sure you put the '\n' at the end or all items will be on one row following the header created in the first line.  
 
-Go to your Kindle Cloud Reader in Chrome, or FireFox. Open the Developer Console. Paste the code block in ad then select RUN.  A dialog box will open when the download completes so you can save or open the new CSV file. Go check out your saved CSV file in the Downloads folder of the current user!  
+Go to your [Kindle Cloud Reader](https://read.amazon.com/kindle-library) in Chrome, or FireFox. Open the Developer Console.  
+* In FireFox useTools > Web Developer (Ctrl+Shift+C)  
+Paste the code block in and then select RUN.  A dialog box will open when the download completes so you can save or open the new CSV file. Go check out your saved CSV file in the Downloads folder of the current user!  
 
 > **Note**: Run this script in FireFox’s Multiline mode. 
 
