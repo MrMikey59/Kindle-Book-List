@@ -52,7 +52,7 @@ itemStatus { Active | Expired }
 
 excludeExpiredItemsFor { KOLL | Purchase | Pottermore | FreeTrial | DeviceRegistration | ku | Sample }
 
-originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample }
+originType { Purchase | PublicLibraryLending | PersonalLending | KOLL | RFFLending | Pottermore | Rental | DeviceRegistration | FreeTrial | ku | Sample | Prime }
 
 isExtendedMYK { True | False }
 
@@ -60,14 +60,23 @@ csrfToken encodeURIComponent(csrf)
 
 Select one item within {} for your query. Not all elements are required in the query.
 
-
 # Data Elements (Fields)
 
-authors List of Authors
+authors[0] List of Authors
 
 title The Title of the Book
 
 asin Amazon's Unique ID Number for the Book
+
+webReaderUrl  bookmark to the web Reader
+
+productUrl a link to cover images
+
+percentageRead a guestimate of how much you've read of the book. 
+
+resourceType (EBOOK or EBOOK_SAMPLE)
+
+originType (PRIME and PURCHASE)
 
 orderDetailURL URL To your Purchase Order for the Book
 
