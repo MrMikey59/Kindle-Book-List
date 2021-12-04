@@ -163,7 +163,7 @@ Script cannot be run consecutively.  Refresh your browser page and then rerun. I
 
 > **Note**: You will not lose the console or the script when you refresh.
 
-> **Note**: Using the TSV version solves the problem with title or authors using commas, but adds steps to convert it to a proper spreadsheet by importing it in =to Excel or Google Sheets.
+> **Note**: Using the TSV version solves the problem with title or authors using commas, but adds steps to convert it to a proper spreadsheet by importing it into Excel or Google Sheets.
 
 ### Change App Default for TSV File
 
@@ -171,4 +171,8 @@ Using Windows Settings, I tried to change the Default App to Excel, but it's not
 
 [![Change TSV Default App](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVFileDefaultApp.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVFileDefaultApp.png)
 
-And the Windows Store doesn't recognize the file type!  
+And the Windows Store doesn't recognize the file type!  So I went to the trouble to "Open With" then selecting more apps till I seek out the Excel.exe file.  I selected that and the change was made to my "Open With" selections.  And now I see these: 
+
+
+
+
