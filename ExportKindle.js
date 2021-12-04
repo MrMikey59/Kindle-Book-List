@@ -2,7 +2,7 @@
 let xhr = new XMLHttpRequest()
 let domain = 'https://read.amazon.com/'
 let items = []
-let csvData = "ASIN,Title,Author(s)"
+let csvData = "ASIN,Title,Author(s)\n"
 
 // function
 function getItemsList(paginationToken = null) {

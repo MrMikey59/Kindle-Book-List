@@ -120,4 +120,6 @@ Second Modify these two line to reflect your data form the data elements to be c
 Make sure you put the '\n' at the end or all items will be on one row following the header created in the first line.  
 Go to your Kindle Cloud Reader in Chrome, or FireFox. Open the Developer Console. Paste the code block in ad then select RUN.  A dialog box will open when the download completes so you can save or open the new CSV file. Go check out your saved CSV file in the Downloads folder of the current user!  
 
-I've included a test run file that I created for my 17000+ book Library.  Note, only the first 10000 books were gathered. This appears to be a limitation of the AMAZON data exchange, not the script.
+I've included a test run file that I created for my 17000+ book Library.  Note, only the first 10000 books were gathered. This appears to be a limitation of the AMAZON data exchange, not the script.  
+
+> **Note**: You can use multiple sort options to get a broader listing and then combine the files and remove duplicates.
