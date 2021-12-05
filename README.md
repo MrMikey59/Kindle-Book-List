@@ -9,11 +9,15 @@ Note:
 - You can read your books in the browser, creating notes & highlights, just like using your Kindle Device.  
 - You can copy your notes & highlights within the web browser for all synced books.
 Data in the Kindle Cloud Library is stored in a JSON format.  
+- You can copy/print the file names (mostly ASINs) from your Kindle while in MPT Mode attached to your computer (using Karen's Print Directory) from either of the following directories that must be copied to a local drive temporarily:
+- - Internal storage\Android\data\com.amazon.kindle\files\medium 
+- - Internal storage\Android\data\com.amazon.kindle\files\small 
 
 #### References
 * [Amazon Product Advertising API (AWS Account)](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html) - An AWS account is required!
 * [GoodReads API](https://www.goodreads.com/api) - A GoodReads key is required!
 * [Markdown Cheat Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)  
+* [Karen's Print Directory](http://www.karenware.com/)
 
 #### Related GISTS
 - https://gist.github.com/jkubecki  
@@ -117,7 +121,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 > **Note:** Wait for all of your books to be loaded into the browser window, then view it's source and copy the DIV section that start with ID of titles_inner_wrapper.   
 This isn't the best choice as clean up of the HTML will take so much more time, and doesn't lend itself to a simple parsing program.
 
-## Using ExportKindleCSV.js for CSV File or ExportKindleTSV.js for TSV File
+# Using ExportKindleCSV.js for CSV File or ExportKindleTSV.js for TSV File
 First, modify the query to support your book list requirements based on the query options available above. 
 
     let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'
@@ -180,3 +184,9 @@ From Choose Another App:
 [![From Choose Another App](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith2.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith2.png)
 
 Note: I recommend not making it a permanent change because you can review the file in NotePad the way it is...and import to a spreadsheet when you are ready.
+
+# Using the Kindle Directory Small or Medium for ASIN's 
+
+After copying the small directory to my desktop, I used [Karen' Print Directory](http://www.karenware.com/) to create a text file of the file names. I deleted most of the header created by Karen's PD but left the odd names for you to review. The file [DirPrntInfo.txt](https://github.com/MrMikey59/Kindle-Book-List/blob/main/DirPrnInfo.txt) is available for your underhood review.   
+Now, with a list od ASINs, you can use some of the other GIT projects to acquire details about the books.  With >10000 books, this may be an easier way to get the data than the previously tested ideas above.
+
