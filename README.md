@@ -193,7 +193,7 @@ Now, with a list of ASINs, you can use some of the other GIT projects to acquire
 # Using the Kindle Sync Metadata Cache XML File from Kindle for PC
 
 I copied the file into a Word temperary document. I Prettied with an edit replace to see all the lines in a more readable format using :
->  Search Field: *><*
+>  Search Field: *><*  
 >  Replace Field: *>  ^p<*  (Note I put two spaces there to add an indent.)  
 This process took >45 minutes with my ~17,600 records - causing some ~270,000 replacements and that was just the first pretty step.
 
