@@ -11,8 +11,8 @@ Note:
 Data in the Kindle Cloud Library is stored in a JSON format.  
 
 #### References
-* [Amazon Product Advertising API (AWS Account)](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html)
-* [GoodReads API](https://www.goodreads.com/api)
+* [Amazon Product Advertising API (AWS Account)](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html) - An AWS account is required!
+* [GoodReads API](https://www.goodreads.com/api) - A GoodReads key is required!
 * [Markdown Cheat Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)  
 
 #### Related GISTS
