@@ -12,12 +12,14 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 - You can copy/print the file names (mostly ASINs) from your Kindle while in MPT Mode attached to your computer (using Karen's Print Directory) from either of the following directories that must be copied to a local drive temporarily:
 - - Internal storage\Android\data\com.amazon.kindle\files\medium 
 - - Internal storage\Android\data\com.amazon.kindle\files\small 
+- You could parse the JSON file metadata.calibre created by [calibre](https://github.com/kovidgoyal/calibre) for the device. You may have two of these files with an external storage installed!
 
 #### References
-* [Amazon Product Advertising API (AWS Account)](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html) - An AWS account is required!
-* [GoodReads API](https://www.goodreads.com/api) - A GoodReads key is required!
+* [Amazon Product Advertising API (AWS Account)](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html) - An AWS account is required!  
+* [Kovid Goyal's calibre](https://github.com/kovidgoyal/calibre)  
+* [GoodReads API](https://www.goodreads.com/api) - A GoodReads key is required!  
+* [Karen's Print Directory](http://www.karenware.com/)  
 * [Markdown Cheat Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)  
-* [Karen's Print Directory](http://www.karenware.com/)
 
 #### Related GISTS
 - https://gist.github.com/jkubecki  
@@ -193,7 +195,7 @@ Now, with a list of ASINs, you can use some of the other GIT projects to acquire
 # Using the Kindle Sync Metadata Cache XML File from Kindle for PC
 
 I copied the file into a Word temperary document. I Prettied with an edit replace to see all the lines in a more readable format using :
->  Search Field: *><*  
->  Replace Field: *>  ^p<*  (Note I put two spaces there to add an indent.)  
+    Search Field: *><*  
+    Replace Field: *>  ^p<*  (Note I put two spaces there to add an indent.)  
 This process took >45 minutes with my ~17,600 records - causing some ~270,000 replacements and that was just the first pretty step.
 
