@@ -179,4 +179,4 @@ From File Explorer Context Menu:
 From Choose Another App:  
 [![From Choose Another App](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith2.png)](https://github.com/MrMikey59/Kindle-Book-List/blob/main/TSVOpenWith2.png)
 
-
+Note: I recommend not making it a permanent change because you can review the file in NotePad the way it is...and import to a spreadsheet when you are ready.
