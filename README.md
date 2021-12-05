@@ -188,5 +188,12 @@ Note: I recommend not making it a permanent change because you can review the fi
 # Using the Kindle Directory Small or Medium for ASIN's 
 
 After copying the small directory to my desktop, I used [Karen' Print Directory](http://www.karenware.com/) to create a text file of the file names. I deleted most of the header created by Karen's PD but left the odd names for you to review. The file [DirPrntInfo.txt](https://github.com/MrMikey59/Kindle-Book-List/blob/main/DirPrnInfo.txt) is available for your underhood review.   
-Now, with a list od ASINs, you can use some of the other GIT projects to acquire details about the books.  With >10000 books, this may be an easier way to get the data than the previously tested ideas above.
+Now, with a list of ASINs, you can use some of the other GIT projects to acquire further details about the books.  With >10000 books, this may be an easier way to get the data than the previously tested idea above.
+
+# Using the Kindle Sync Metadata Cache XML File from Kindle for PC
+
+I copied the file into a Word temperary document. I Prettied with an edit replace to see all the lines in a more readable format using :
+>  Search Field: *><*
+>  Replace Field: *>  ^p<*  (Note I put two spaces there to add an indent.)  
+This process took >45 minutes with my ~17,600 records - causing some ~270,000 replacements and that was just the first pretty step.
 
