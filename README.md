@@ -83,7 +83,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | number_of_ratings | Number of Ratings for the Book (Date Specific) |  
 
 ## Alternate Sources of Book List
-* KindleSyncMetadataCache.xml (a Kindle for PC database)
+* [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-Book-List/blob/main/KindleSyncMetadataCache.xml) (a Kindle for PC database)
 * [Kindle Cloud Reader](https://read.amazon.com/kindle-library) HTML file.
 * [GoodReads](https://www.goodreads.com/) or [GoodReads Mobile](https://www.goodreads.com/toggle_mobile) Shelfari or My Books HTML file.
 
@@ -204,7 +204,7 @@ After completing the header removal, the extraneous non-ASIN file listings and t
 
 I copied the file into a Word temperary document. I Prettied with an edit replace to see all the lines in a more readable format using :
     Search Field: *><*  
-    Replace Field: *>  ^p<*  (Note I put two spaces there to add an indent.)  
+    Replace Field: *>^p  <*  (Note I put two spaces there to add an indent.)  
 This process took >45 minutes with my ~17,600 records - causing some ~270,000 replacements and that was just the first pretty step, now with ~7800 pages!
 
 Due to size, I deleted many <meta_data>...</meta_data> entries to make the file usable for testing - also a just little time consuming! Using *[CTRL] + [SHIFT] + END* from a high point at at <meta_data> markermade selection and cursor back up the an end tag made the mass deletion a lot easier in WORD!
