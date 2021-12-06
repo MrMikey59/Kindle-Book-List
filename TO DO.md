@@ -1,7 +1,7 @@
 # TO DO
 
-1. Test values used in:
-    let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'
+1. Test values used in:  
+  >  let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'  
   - sortType - reverse order?
   - sortIndex
   - sortOrder
