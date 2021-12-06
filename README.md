@@ -35,6 +35,7 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | ASIN    | Amazon Store Identification Number;<br> Amazon Standard Identification Number |  
 | csrs    | ??? - If you know - let me know! |  
 | CSV     | Comma Separated Values (a Database) |  
+| CTRL    | Control (a keyboard key!) |  
 | HTML    | HyperText Markup Language |  
 | JSON    | JavaScript Object Notation (a Database) |  
 | K4PC    | Kindle for Personal Computers |  
