@@ -206,7 +206,7 @@ I copied the file into a Word temperary document. I Prettied with an edit replac
     Replace Field: *>  ^p<*  (Note I put two spaces there to add an indent.)  
 This process took >45 minutes with my ~17,600 records - causing some ~270,000 replacements and that was just the first pretty step, now with ~7800 pages!
 
-Due to size, I deleted many <meta_data>...</meta_data> entries to make the file usable for testing - also very time consuming! 
+Due to size, I deleted many <meta_data>...</meta_data> entries to make the file usable for testing - also a just little time consuming! Using *[CTRL] + [SHIFT] + END* from a high point at at <meta_data> markermade selection and cursor back up the an end tag made the mass deletion a lot easier in WORD!
 
 *NOTE*: This is a research project, so I did all of the above in WORD to see how long it would take. I know it could be programatically done much faster.  ;)  
 
