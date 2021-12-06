@@ -1,6 +1,6 @@
 # Kindle-Book-List
 
-This is a project to collect information from Amazon related to purchased books from the Kindle Cloud Library. All the books added to Kindle account are stored on Amazon servers, not on the particular device. Access your Kindle Cloud Library by loggin into your Amazon account then select Manage Your Content and Devices. 
+This is a research project to collect information from Amazon related to purchased books from the Kindle Cloud Library. All the books added to Kindle account are stored on Amazon servers, not on the particular device. Access your Kindle Cloud Library by logging into your Amazon account then select Manage Your Content and Devices. 
 
 Access the Library: https://read.amazon.com/kindle-library
 
@@ -10,15 +10,19 @@ Note:
 - You can copy your notes & highlights within the web browser for all synced books.
 Data in the Kindle Cloud Library is stored in a JSON format.  
 - You can copy/print the file names (mostly ASINs) from your Kindle while in MPT Mode attached to your computer (using Karen's Print Directory) from either of the following directories that must be copied to a local drive temporarily:
-- - Internal storage\Android\data\com.amazon.kindle\files\medium 
-- - Internal storage\Android\data\com.amazon.kindle\files\small 
+  - Internal storage\Android\data\com.amazon.kindle\files\medium 
+  - Internal storage\Android\data\com.amazon.kindle\files\small 
 - You could parse the JSON file metadata.calibre created by [calibre](https://github.com/kovidgoyal/calibre) for the device. You may have two of these files with an external storage installed!
+
+#### Equipment
+* Windows 10 PC
+* Kindle Fire HD10
 
 #### References
 * [Amazon Product Advertising API (AWS Account)](https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html) - An AWS account is required!  
-* [Kovid Goyal's calibre](https://github.com/kovidgoyal/calibre)  
 * [GoodReads API](https://www.goodreads.com/api) - A GoodReads key is required!  
 * [Karen's Print Directory](http://www.karenware.com/)  
+* [Kovid Goyal's calibre](https://github.com/kovidgoyal/calibre)  
 * [Markdown Cheat Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)  
 
 #### Related GISTS
@@ -192,10 +196,19 @@ Note: I recommend not making it a permanent change because you can review the fi
 After copying the small directory to my desktop, I used [Karen' Print Directory](http://www.karenware.com/) to create a text file of the file names. I deleted most of the header created by Karen's PD but left the odd names for you to review. The file [DirPrntInfo.txt](https://github.com/MrMikey59/Kindle-Book-List/blob/main/DirPrnInfo.txt) is available for your underhood review.   
 Now, with a list of ASINs, you can use some of the other GIT projects to acquire further details about the books.  With >10000 books, this may be an easier way to get the data than the previously tested idea above.
 
+After completing the header removal, the extraneous non-ASIN file listings and the "FILE      " lead in to each ASIN, I now have the functional [ASINList.txt](https://github.com/MrMikey59/Kindle-Book-List/blob/main/ASINList.txt).
+
+
 # Using the Kindle Sync Metadata Cache XML File from Kindle for PC
 
 I copied the file into a Word temperary document. I Prettied with an edit replace to see all the lines in a more readable format using :
     Search Field: *><*  
     Replace Field: *>  ^p<*  (Note I put two spaces there to add an indent.)  
-This process took >45 minutes with my ~17,600 records - causing some ~270,000 replacements and that was just the first pretty step.
+This process took >45 minutes with my ~17,600 records - causing some ~270,000 replacements and that was just the first pretty step, now with ~7800 pages!
+
+Due to size, I deleted many <meta_data>...</meta_data> entries to make the file usable for testing - also very time consuming! 
+
+*NOTE*: This is a research project, so I did all of the above in WORD to see how long it would take. I know it could be programatically done much faster.  ;)  
+
+The prettier [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-Book-List/blob/main/KindleSyncMetadataCache.xml) is now ready for further XML to CSV or TSV processing.
 
