@@ -2,12 +2,12 @@
 
 1. Test values used in:  
   >  let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'  
-  - sortType - reverse order?
-  - sortIndex
-  - sortOrder
-  - startIndex
-  - ASIN
-  - Author
+    - sortType - reverse order?
+    - sortIndex
+    - sortOrder
+    - startIndex
+    - ASIN
+    - Author
 
 2. Parse the XML file to CSV or TSV.  
 
@@ -23,7 +23,7 @@
 
 | Program | Problems Noted | Source |  
 | -------------- | ---------------- | -------------- |  
-| KindleMate (Portable) | doesn’t recognize Kindle Fire HD10 Tablets. | SF |   
+| [KindleMate](https://kmate.me/) (Portable) [SF Site](https://sourceforge.net/projects/kmate/) | doesn’t recognize Kindle Fire HD10 Tablets. | SF |   
 | [Kingleabra](https://github.com/richardpeng/Kindelabra) | too many requirements, install package fails | GH | 
 | [Kindle Book Templates](https://sourceforge.net/projects/html-template-amazon-kindle/) | Create books, not list them! | SF |  
 | [Kindle Book Maker](https://github.com/barretlee/kindleBookMaker) | Create books, not list them! | GH |  
