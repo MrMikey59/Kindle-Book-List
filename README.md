@@ -9,10 +9,7 @@ Note:
 - You can read your books in the browser, creating notes & highlights, just like using your Kindle Device.  
 - You can copy your notes & highlights within the web browser for all synced books.
 Data in the Kindle Cloud Library is stored in a JSON format.  
-- You can copy/print the file names (mostly ASINs) from your Kindle while in MPT Mode attached to your computer (using Karen's Print Directory) from either of the following directories that must be copied to a local drive temporarily:
-  - Internal storage\Android\data\com.amazon.kindle\files\medium 
-  - Internal storage\Android\data\com.amazon.kindle\files\small 
-- You could parse the JSON file metadata.calibre created by [calibre](https://github.com/kovidgoyal/calibre) for the device. You may have two of these files with an external storage installed!
+
 
 #### Equipment
 * Windows 10 PC
@@ -83,9 +80,15 @@ Data in the Kindle Cloud Library is stored in a JSON format.
 | number_of_ratings | Number of Ratings for the Book (Date Specific) |  
 
 ## Alternate Sources of Book List
-* [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-Book-List/blob/main/KindleSyncMetadataCache.xml) (a Kindle for PC database)
+* [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-Book-List/blob/main/KindleSyncMetadataCache.xml) (a Kindle for PC database normally found at *C:\Users\%USERNAME%\AppData\Local\Amazon\Kindle\Cache*)
+  - Books are in Root <add_update_list> in <meta_data>...</meta_data> blocks.
+  - Fields include: *ASIN*, *title*, *authors*, *publishers*, *publication_date*, *textbook_type*, *cde_contenttype*, and *content_type*.
 * [Kindle Cloud Reader](https://read.amazon.com/kindle-library) HTML file.
 * [GoodReads](https://www.goodreads.com/) or [GoodReads Mobile](https://www.goodreads.com/toggle_mobile) Shelfari or My Books HTML file.
+* You can copy/print the file names (mostly ASINs) from your Kindle while in MPT Mode attached to your computer (using Karen's Print Directory) from either of the following directories that must be copied to a local drive temporarily:
+  - Internal storage\Android\data\com.amazon.kindle\files\medium 
+  - Internal storage\Android\data\com.amazon.kindle\files\small 
+* You could parse the JSON file metadata.calibre created by [calibre](https://github.com/kovidgoyal/calibre) for the device. You may have two of these files with an external storage installed!  
 
 ## KindleSyncMetadataCache.xml File Sample Format:
 ```xml

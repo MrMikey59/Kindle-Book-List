@@ -1,16 +1,20 @@
 # TO DO
 
-1. Test values used in:  
+1. Test extended values used in the query:  
   >  let url = domain + 'kindle-library/search?query=&libraryType=BOOKS' + ( paginationToken ? '&paginationToken=' + paginationToken : '' ) + '&sortType=recency&querySize=50'  <br>  
-  
+
     - sortType - reverse order?  
     - sortIndex  
     - sortOrder  
     - startIndex  
     - ASIN  
-    - Author  
+    - Author 
+    - ISBN  
+    - orderID
+    - category
 
-2. Parse the XML file to CSV or TSV.  
+2. Parse the XML file to CSV or TSV or XLSX.  
+  - •	https://github.com/Aternus/csv-to-xlsx 
 
 3. Create a standalone app to get the books.  
 
