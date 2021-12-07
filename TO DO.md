@@ -37,3 +37,10 @@
 
 8. Review the [Amazon Forum](https://www.amazonforum.com/). Is anyone else working on this issue?
 
+9. Create a **Changelog.md** File 
+
+10. Create an **Issues.md** File or StatementShould it happen that the tool broke down on you please head to our Issue tracker
+
+    - Search if the issue is already discussed or explained.
+    - If no luck feel free to open a new issue and we will get back to you as soon as possible.
+  
