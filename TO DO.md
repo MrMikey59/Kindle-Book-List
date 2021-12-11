@@ -44,3 +44,17 @@
     - Search if the issue is already discussed or explained.
     - If no luck feel free to open a new issue and we will get back to you as soon as possible.
   
+11.  Additioanl Research Sites:
+    https://github.com/koreader/koreader 
+    https://github.com/ch33s3w0rm/kindle_dedrm 
+    https://github.com/passcod/kndl 
+    https://github.com/mattbnz/kindle-utils 
+    https://github.com/lrobot/kindledecrypt 
+    https://github.com/lolsborn/readsync 
+    https://github.com/J0hn8uff3r/Kindle-with-Special-Offers-Ads-Remover 
+    https://github.com/laoar/kindle_killer 
+    https://github.com/mkb79/kindle
+    https://ptbrowne.github.io/posts/whispersync-reverse-engineering/
+  
+  
+
