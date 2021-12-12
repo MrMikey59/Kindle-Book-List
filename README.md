@@ -1,6 +1,6 @@
 # Kindle-Book-List
 
-> **BLUF:**  Use the Kindle for PC app to generate the KindleSyncMetadataCache.xml. Use that file and a parser program to extract the data fields into a CSV, HTML(Table), MD(Table) or TSV file for use. What follows is the train of research to reach this decision.  
+> **BLUF:**  Use the Kindle for PC app to generate the KindleSyncMetadataCache.xml. Use that file and a parser program to extract the data fields into a CSV, HTML(Table), MD(Table) or TSV file for use. What follows is my train (wreck) of research to reach this decision.  
 
 This is a research project to collect information from Amazon related to purchased books from the Kindle Cloud Library. All the books added to Kindle account are stored on Amazon servers, not on the particular device. Access your Kindle Cloud Library by logging into your Amazon account then select Manage Your Content and Devices. 
 
