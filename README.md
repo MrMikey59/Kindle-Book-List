@@ -218,7 +218,7 @@ The prettier [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-B
 
 # Using Excel 2017/O365
 
-After updating the KindleSyncMetaqDataCache.xml, I used Excel 2016/O365 to import the data into the spreadsheet in the following process:
+After updating the KindleSyncMetaqDataCache.xml, I used Excel 2016/O365 to import the data into the [spreadsheet My Kindle Books](https://github.com/MrMikey59/Kindle-Book-List/blob/main/My%20Kindle%20Books.xlsx) in the following process:
 >1. File > Open, Choose the file location.
 >2. Since no schema is provided, select to open the XML as a spreadsheet (first option)
 >3. Review the file!
