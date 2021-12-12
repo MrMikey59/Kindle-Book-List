@@ -216,3 +216,20 @@ Due to size, I deleted many <meta_data>...</meta_data> entries to make the file 
 
 The prettier [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-Book-List/blob/main/KindleSyncMetadataCache.xml) is now ready for further XML to CSV or TSV processing.
 
+# Using Excel 2017/O365
+
+After updating the KindleSyncMetaqDataCache.xml, I used Excel 2016/O365 to import the data into the spreadsheet in the following process:
+>1. File > Open, Choose the file location.
+>2. Since no schema is provided, select to open the XML as a spreadsheet (first option)
+>3. Review the file!
+
+Problem I noticed:
+- Sync Date & Time was added to every book. Deleted the column.  
+- Columns headers were exactly the XML Element name. Attributes were also expanded into their own column, so I deleted them.  
+- Mulitiple Authors/Publishers were treated to duplicate entries with repeated information from the book's other information.  
+- Dates & Time are large details that will need trimming.  
+
+My Conclusion - this is a viable option, Excel converts the file (17700+ Unique Books) quickly, but some serious massaging of the data is required to make this a **GOOD  NORMAILIZED** database.
+      
+      
+      
