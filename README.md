@@ -220,12 +220,24 @@ The prettier [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-B
       
 ### KindleSyncMetadatCaqche.xml
 
-Basic details about the file needed for parsing
+Basic details about the [file](https://github.com/MrMikey59/Kindle-Book-List/blob/main/README.md#kindlesyncmetadatacachexml-file-sample-format) needed for parsing
 | Node | Element Used|  
 | ---- | ---- |  
 | Root Node | <add_update_list> |  
 | Book Nodes | <meta_data>…</meta_data> |  
-
+      
+Using the add_update_list section with an XML DOCID:
+|Child Node Index|Node ID|Notes|
+| :---: | --- | --- |  
+|0|ASIN|Amazon’s Standard Identification Number (Primary Key)|  
+|1|title|May contain a series, commas, and colons| 
+|2|authors|May contain multiple entries (<author pronunciation="">…</author>), commas and colons| 
+|3|publishers|May contain multiple entries (<publisher>…</publisher>), commas and colons| 
+|4|publication_date|Left(<Node>,10) trimming required.| 
+|5|purchase_date|Left(<Node>,10) trimming required.| 
+|6|textbook_type|| 
+|7|cde_contenttype|EBOK| 
+|8|content_type|MIME: `application/x-mobipocket-ebook`| 
 
 ## Using Excel 2017/O365
 
