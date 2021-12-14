@@ -217,6 +217,15 @@ Due to size, I deleted many <meta_data>...</meta_data> entries to make the file 
 *NOTE*: This is a research project, so I did all of the above in WORD to see how long it would take. I know it could be programatically done much faster.  ;)  
 
 The prettier [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-Book-List/blob/main/KindleSyncMetadataCache.xml) is now ready for further XML to CSV or TSV processing.
+      
+### KindleSyncMetadatCaqche.xml
+
+Basic details about the file needed for parsing
+| Node | Element Used|  
+| ---- | ---- |  
+| Root Node | <add_update_list> |  
+| Book Nodes | <meta_data>…</meta_data> |  
+
 
 ## Using Excel 2017/O365
 
