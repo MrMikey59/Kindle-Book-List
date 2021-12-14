@@ -218,7 +218,7 @@ Due to size, I deleted many <meta_data>...</meta_data> entries to make the file 
 
 The prettier [KindleSyncMetadataCache.xml](https://github.com/MrMikey59/Kindle-Book-List/blob/main/KindleSyncMetadataCache.xml) is now ready for further XML to CSV or TSV processing.
       
-### KindleSyncMetadatCaqche.xml
+### KindleSyncMetadataCache.xml
 
 Basic details about the [file](https://github.com/MrMikey59/Kindle-Book-List/blob/main/README.md#kindlesyncmetadatacachexml-file-sample-format) needed for parsing
 | Node | Element Used|  
