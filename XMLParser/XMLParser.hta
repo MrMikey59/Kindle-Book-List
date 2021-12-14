@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<HTML lang="en">
+<HEAD>
+  <title>A Simple HTA Application</title>
+  <HTA:APPLICATION
+    APPLICATIONNAME = "An XML Parser HTA"
+    ID="testHTA" 
+    APPLICATIONNAME="Test HTA" 
+    BORDER="dialog"
+    CAPTION="yes" 
+    SHOWINTASKBAR="yes" 
+    SYSMENU="yes" 
+    ICON = "599CD-1.ico"
+  />
+</HEAD>
+ 
+<BODY background="..\pictures\BlueSpotty.gif">
+  <A NAME=TopofPage></A>
+
+<H1><FONT onMouseOver="this.style.color='#FF0000'" onmouseout="this.style.color='#000000'">An XML Parser HTA</FONT></H1>
+
+<HR>
+
+<H3>List of Books:</H3>
+<p id="BooksList">
+<!-- Script for Parsing an XML -->
+<script language=VBScript>
+  Set xmlDoc = CreateObject("msxml2.DOMDocument.6.0")
+  xmlDoc.async = false
+  xmlDoc.load ".\Kindle Full.xml"                             ' Load the XML Data File
+  Set xmlDocRoot = xmlDoc.childNodes(1)
+  Set xmlDocRecord = xmlDocRoot.childNodes(4)                 ' Set the Root for the Record Set
+  Set xmlDocList = xmlDoc.getElementsByTagName("meta_data")   ' Set the Root for the Record Set
+  count = 0
+  txtOutput = ""
+  tblOutput = "ASIN" & vbTab & "Title" & vbTab & "Author(s)" & vbTab & "Publisher" & _
+              vbTab & "Publish Date" & vbTab & "Purchase Date" & vbCRLF
+  for each Elem in xmlDocList
+    count = count + 1
+    txtOutput = txtOutput & "<B>Book(" & count & ") ASIN: </B>" & Elem.childNodes(0).text & "<br>"
+    txtOutput = txtOutput & "Title: " & Elem.childNodes(1).text & "<br>"
+    txtOutput = txtOutput & "Authors: " & Elem.childNodes(2).text & "<br>" 
+    txtOutput = txtOutput & "Publisher: " & Elem.childNodes(3).text & " - "
+    txtOutput = txtOutput & "PublishDate: " & Left(Elem.childNodes(4).text,10) & "<br>"
+    txtOutput = txtOutput & "PurchaseDate: " & Left(Elem.childNodes(5).text,10) & "<br><hr>"
+    tblOutput = tblOutput & count & vbTab & _
+      Elem.childNodes(0).text & vbTab & _
+      Elem.childNodes(2).text & vbTab & _
+      Elem.childNodes(3).text & vbTab & _
+      Left(Elem.childNodes(4).text,10) & vbTab & _
+      Left(Elem.childNodes(5).text,10) & vbTab & vbCRLF 
+  next
+  document.write txtOutput  ' Outputs directly to the HTML document
+  document.write "<hr>"
+'  document.write tblOutput  ' Tabs & CRLF do not work in the HTML Document
+  MsgBox tblOutput  ' Tabs & CRLF work in the message display!
+</script>
+</p>
+
+<!-- This is the credits section                                          -->
+<!-- -------------------------------------------------------------------- -->
+    <I><CENTER><B><SMALL>
+      <A HREF=#TopofPage>Return to Top</A>
+      <HR>
+      <ADDRESS>Created by Michael R. Myers, Genius at Large in his own mind!</ADDRESS>
+      <BR>
+      <SCRIPT language="JavaScript">
+      <!--Display the Date -->
+        today=new Date();
+        date="Today's Date: " + (today.getMonth()+1) + "/" + today.getDate() + "/" +   (today.getYear());
+        document.writeln(date);
+        document.write("Last updated: "+ document.lastModified);
+      // -->
+      </SCRIPT>
+    </SMALL></B></CENTER></I>
+
+</BODY>
+ 
+</HTML>
