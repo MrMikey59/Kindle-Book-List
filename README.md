@@ -239,6 +239,32 @@ Using the add_update_list section with an XML DOCID:
 |7|cde_contenttype|EBOK| 
 |8|content_type|MIME: `application/x-mobipocket-ebook`| 
 
+Use:
+```vbscript
+  Set xmlDocRoot = xmlDoc.childNodes(1)
+' Get to the add_update_list
+  Set xmlDocRecord = xmlDocRoot.childNodes(1)
+' Set the Root for the Record Set
+  Set xmlDocList = xmlDoc.getElementsByTagName("meta_data
+```
+With the full XML package as saved by Kindle for PC:
+
+|Child Node Index|Node ID|Notes|
+| :---: | --- | --- |
+|0|?xml|<?xml version="1.0"?>|
+|1|response||
+|3|cache_metadata||
+|4|add_update_list|Broken down above|
+
+Use:
+```vbscript
+  Set xmlDocRoot = xmlDoc.childNodes(1)
+' Get to the add_update_list
+  Set xmlDocRecord = xmlDocRoot.childNodes(4) 
+' Set the Root for the Record Set
+  Set xmlDocList = xmlDoc.getElementsByTagName("meta_data")
+```
+      
 ## Using Excel 2017/O365
 
 After updating the KindleSyncMetaqDataCache.xml, I used Excel 2016/O365 to import the data into the [spreadsheet My Kindle Books](https://github.com/MrMikey59/Kindle-Book-List/blob/main/My%20Kindle%20Books.xlsx) in the following process:
@@ -253,6 +279,4 @@ Problem I noticed:
 - Dates & Time are large details that will need trimming.  
 
 My Conclusion - this is a viable option, Excel converts the file (17700+ Unique Books) quickly, but some serious massaging of the data is required to make this a **GOOD NORMAILIZED** database.
-      
-      
       
