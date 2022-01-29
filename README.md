@@ -4,14 +4,14 @@
 
 This is a research project to collect information from Amazon related to purchased books from the Kindle Cloud Library. All the books added to Kindle account are stored on Amazon servers, not on the particular device. Access your Kindle Cloud Library by logging into your Amazon account then select Manage Your Content and Devices. 
 
-Access the Library: https://read.amazon.com/kindle-library
+Access the Kindle Library: https://read.amazon.com/kindle-library  
+Access the Google Library: https://play.google.com/books/  (an Alternate)  
 
 Note:
 - Kindle Cloud Reader offers very basic features: highlights, notes, or search within a book.  
 - You can read your books in the browser, creating notes & highlights, just like using your Kindle Device.  
 - You can copy your notes & highlights within the web browser for all synced books.
 Data in the Kindle Cloud Library is stored in a JSON format.  
-
 
 #### Equipment
 * Windows 10 PC
